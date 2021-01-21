@@ -30,6 +30,7 @@ const noteController = {
         }
     },
     // Delete 
+
     deleteNote: async (req, res) => {
         try {
             await Notes.findByIdAndDelete(req.params.id)
